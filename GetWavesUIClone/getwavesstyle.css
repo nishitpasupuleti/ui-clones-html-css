@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.topcontainer {
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(243 244 245);
+    position: relative;
+
+}
+
+.haikei {
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUzNiIgaGVpZ2h0PSI1NiIgdmlld0JveD0iMCAwIDE1MzYgNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiPgo8cmVjdCB3aWR0aD0iMTUzNiIgaGVpZ2h0PSI1NiIgZmlsbD0iI0ZCQUUzQyIvPgo8cGF0aCBkPSJNMTU4NS4yMSAtMzU3LjEwNUgtMS44Mzk4NFY3MDAuOTI1SDE1ODUuMjFWLTM1Ny4xMDVaIiBmaWxsPSIjMDAyMjMzIi8+CjxwYXRoIGQ9Ik0xMDcyLjA2IDEyMS4yOTVDMTA5NC40NiAxMjEuMjk1IDExMTIuNjIgMTAzLjEzNyAxMTEyLjYyIDgwLjczNzVDMTExMi42MiA1OC4zMzggMTA5NC40NiA0MC4xNzk3IDEwNzIuMDYgNDAuMTc5N0MxMDQ5LjY2IDQwLjE3OTcgMTAzMS41IDU4LjMzOCAxMDMxLjUgODAuNzM3NUMxMDMxLjUgMTAzLjEzNyAxMDQ5LjY2IDEyMS4yOTUgMTA3Mi4wNiAxMjEuMjk1WiIgZmlsbD0iIzE2M0Q1MCIvPgo8cGF0aCBkPSJNMTY3LjQ0NyAxMDMuMTM2QzE4OC44NzIgMTAzLjEzNiAyMDYuMjQxIDg1Ljc2NjkgMjA2LjI0MSA2NC4zNDEzQzIwNi4yNDEgNDIuOTE1NyAxODguODcyIDI1LjU0NjkgMTY3LjQ0NyAyNS41NDY5QzE0Ni4wMjEgMjUuNTQ2OSAxMjguNjUyIDQyLjkxNTcgMTI4LjY1MiA2NC4zNDEzQzEyOC42NTIgODUuNzY2OSAxNDYuMDIxIDEwMy4xMzYgMTY3LjQ0NyAxMDMuMTM2WiIgZmlsbD0iIzE2M0Q1MCIvPgo8cGF0aCBkPSJNMTUyNy4wMSAzOS42NTI3QzE1MzkuNjcgMzkuNjUyNyAxNTQ5Ljk0IDI5LjM4OTIgMTU0OS45NCAxNi43Mjg3QzE1NDkuOTQgNC4wNjgxIDE1MzkuNjcgLTYuMTk1MzEgMTUyNy4wMSAtNi4xOTUzMUMxNTE0LjM1IC02LjE5NTMxIDE1MDQuMDkgNC4wNjgxIDE1MDQuMDkgMTYuNzI4N0MxNTA0LjA5IDI5LjM4OTIgMTUxNC4zNSAzOS42NTI3IDE1MjcuMDEgMzkuNjUyN1oiIGZpbGw9IiMxNjNENTAiLz4KPHBhdGggZD0iTTQ2My4wOSA1MC4yMzQyQzQ2OS45MDcgNTAuMjM0MiA0NzUuNDMzIDQ0LjcwNzggNDc1LjQzMyAzNy44OTA2QzQ3NS40MzMgMzEuMDczMyA0NjkuOTA3IDI1LjU0NjkgNDYzLjA5IDI1LjU0NjlDNDU2LjI3MyAyNS41NDY5IDQ1MC43NDYgMzEuMDczMyA0NTAuNzQ2IDM3Ljg5MDZDNDUwLjc0NiA0NC43MDc4IDQ1Ni4yNzMgNTAuMjM0MiA0NjMuMDkgNTAuMjM0MloiIGZpbGw9IiMxNjNENTAiLz4KPHBhdGggZD0iTTMyNi4xNDkgNTUuNTI0MUMzNTEuNDcgNTUuNTI0MSAzNzEuOTk3IDM0Ljk5NzIgMzcxLjk5NyA5LjY3NjA5QzM3MS45OTcgLTE1LjY0NSAzNTEuNDcgLTM2LjE3MTkgMzI2LjE0OSAtMzYuMTcxOUMzMDAuODI4IC0zNi4xNzE5IDI4MC4zMDEgLTE1LjY0NSAyODAuMzAxIDkuNjc2MDlDMjgwLjMwMSAzNC45OTcyIDMwMC44MjggNTUuNTI0MSAzMjYuMTQ5IDU1LjUyNDFaIiBmaWxsPSIjMTYzRDUwIi8+CjxwYXRoIGQ9Ik04NDEuMDU3IDgyLjQ0NTVDODYwLjUzNSA4Mi40NDU1IDg3Ni4zMjQgNjYuNjU1NiA4NzYuMzI0IDQ3LjE3NzhDODc2LjMyNCAyNy43IDg2MC41MzUgMTEuOTEwMiA4NDEuMDU3IDExLjkxMDJDODIxLjU3OSAxMS45MTAyIDgwNS43ODkgMjcuNyA4MDUuNzg5IDQ3LjE3NzhDODA1Ljc4OSA2Ni42NTU2IDgyMS41NzkgODIuNDQ1NSA4NDEuMDU3IDgyLjQ0NTVaIiBmaWxsPSIjMTYzRDUwIi8+CjxwYXRoIGQ9Ik0xMzU0LjIgMzIuNjAwMUMxMzY5Ljc4IDMyLjYwMDEgMTM4Mi40MiAxOS45NjgyIDEzODIuNDIgNC4zODYwMUMxMzgyLjQyIC0xMS4xOTYyIDEzNjkuNzggLTIzLjgyODEgMTM1NC4yIC0yMy44MjgxQzEzMzguNjIgLTIzLjgyODEgMTMyNS45OSAtMTEuMTk2MiAxMzI1Ljk5IDQuMzg2MDFDMTMyNS45OSAxOS45NjgyIDEzMzguNjIgMzIuNjAwMSAxMzU0LjIgMzIuNjAwMVoiIGZpbGw9IiMxNjNENTAiLz4KPHBhdGggZD0iTTEyMDIuNTUgNTAuOTk2NEMxMjE1LjIxIDUwLjk5NjQgMTIyNS40OCA0MC43MzMgMTIyNS40OCAyOC4wNzI0QzEyMjUuNDggMTUuNDExOSAxMjE1LjIxIDUuMTQ4NDQgMTIwMi41NSA1LjE0ODQ0QzExODkuODkgNS4xNDg0NCAxMTc5LjYzIDE1LjQxMTkgMTE3OS42MyAyOC4wNzI0QzExNzkuNjMgNDAuNzMzIDExODkuODkgNTAuOTk2NCAxMjAyLjU1IDUwLjk5NjRaIiBmaWxsPSIjMTYzRDUwIi8+CjxwYXRoIGQ9Ik02MTMuNTgyIDE3LjMwOTVDNjI1LjI2OSAxNy4zMDk1IDYzNC43NDMgNy44MzU1NiA2MzQuNzQzIC0zLjg1MTEyQzYzNC43NDMgLTE1LjUzNzggNjI1LjI2OSAtMjUuMDExNyA2MTMuNTgyIC0yNS4wMTE3QzYwMS44OTYgLTI1LjAxMTcgNTkyLjQyMiAtMTUuNTM3OCA1OTIuNDIyIC0zLjg1MTEyQzU5Mi40MjIgNy44MzU1NiA2MDEuODk2IDE3LjMwOTUgNjEzLjU4MiAxNy4zMDk1WiIgZmlsbD0iIzE2M0Q1MCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwIj4KPHJlY3Qgd2lkdGg9IjE1MzYiIGhlaWdodD0iNTYiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 0 1rem; */
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.haikei>p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+
+
+}
+
+.haikei a:link,
+.haikei a:visited {
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+
+}
+
+.c1 {
+    margin: auto;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    position: relative;
+    left: -0.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.c1>.maker {
+
+    font-size: 0.9rem;
+    color: rgb(39, 48, 54);
+    font-weight: 500;
+
+}
+
+.maker a:link,
+.maker a:visited {
+
+    font-size: 0.9rem;
+    color: rgb(39, 48, 54);
+    font-weight: 500;
+
+}
+
+.maker a:hover {
+    color: #0099ff;
+}
+
+.c1>.logo {
+    position: relative;
+    left: -2.5rem;
+}
+
+.share {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+}
+
+.share>span {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3.6rem;
+    color: rgb(39, 48, 54);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wavestyle {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+
+}
+
+.opt1 {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.shape {
+
+    background: linear-gradient(to right, #0099ff 33%, rgb(243 244 245) 33%);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243 244 245);
+    padding: 0.5rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+.direction {
+
+    background: linear-gradient(to right, #0099ff 50%, rgb(243 244 245) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.opt2 {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.wavecolor {
+    display: flex;
+    background-color: rgb(243 244 245);
+    align-items: center;
+    padding-left: 1.2rem;
+    padding-right: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    gap: 1rem;
+}
+
+.wavecolor>span {
+    font-size: 0.95rem;
+    color: rgb(39, 48, 54);
+    font-weight: 500;
+}
+
+.color {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #0099ff;
+    border-radius: 0.75rem;
+}
+
+.waveopacity {
+    display: flex;
+    background-color: rgb(243 244 245);
+    align-items: center;
+    padding-left: 1.2rem;
+    padding-right: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.opt3 {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.opt4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0099ff;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+}
+
+.download {
+    color: #0099ff;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    margin: auto;
+    box-shadow: 0 0.5rem 1.25rem 0 rgba(39, 48, 54, 0.2);
+}
+
+.middle {
+    background-color: rgb(255, 255, 255);
+    height: 47vh;
+}
+
+.bottom {
+    height: 77vh;
+    background-color: rgb(243, 244, 245);
+
+}
+
+.grid {
+    position: relative;
+    padding-top: 4rem;
+    box-sizing: border-box;
+    display: grid;
+    height: 80%;
+    grid-template-rows: [okati] auto [rendu] 3rem [moodu] auto [naalgu];
+    grid-template-columns: [okati] 22rem [rendu] 22rem [moodu] 22rem [naalgu];
+    gap: 1rem 0rem;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding-left: 2.5rem;
+}
+
+.news {
+    font-size: 0.95rem;
+
+    grid-row: okati/rendu;
+    grid-column: okati/rendu;
+    font-weight: 700;
+    text-align: left;
+}
+
+.contact {
+    font-size: 0.95rem;
+
+    grid-row: okati/rendu;
+    grid-column: rendu/moodu;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    left: -1rem;
+
+}
+
+.products {
+    font-size: 0.95rem;
+
+    grid-row: okati/rendu;
+    grid-column: moodu/naalgu;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    left: -4rem;
+}
+
+.notify {
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    grid-row: rendu/moodu;
+    grid-column: okati/rendu;
+}
+
+.chat {
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    grid-row: rendu/moodu;
+    grid-column: rendu/moodu;
+    position: relative;
+    left: -1rem;
+}
+
+.grid a:link,
+.grid a:visited {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: black;
+}
+
+.grid a:hover {
+    color: #0099ff;
+}
+
+.blobmaker {
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    grid-row: rendu/moodu;
+    grid-column: moodu/naalgu;
+    /* margin-bottom: 9rem; */
+    position: relative;
+    left: -4rem;
+}
+
+
+.subscribe>.email {
+    width: 100%;
+    height: 2.3rem;
+    border-color: transparent;
+    outline: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+
+
+}
+
+.subscribe>.sub {
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    width: 24.25rem;
+    height: 2.5rem;
+    background-color: #0099ff;
+    border-radius: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+input::placeholder {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.subscribe>label {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.figma {
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    grid-row: moodu/naalgu;
+    grid-column: moodu/naalgu;
+    position: relative;
+    left: -4rem;
+
+}
+
+.figma span {
+    position: relative;
+    top: -0.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.something {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 93%;
+    top: 6.4rem;
+    height: 13.5rem;
+    justify-content: space-between;
+}
+
+.line {
+    width: 90%;
+    margin: auto;
+
+}
+
+.copyright {
+    margin-left: 45%;
+    margin-right: 8rem;
+    position: relative;
+    top: 1.8rem;
+    font-size: 0.9rem;
+}
+
+.copyright a:visited,
+.copyright a:link {
+    color: black;
+}
+
+.copyright a:hover {
+    color: #0099ff;
+}
+
+.award {
+    position: relative;
+    top: 2.3rem;
+}
+
+/* Base styles already defined above */
+
+/* MEDIA QUERY FOR SMALL SCREENS */
+@media screen and (max-width: 1323px) {
+
+    .topcontainer {
+        height: auto;
+    }
+
+    .c1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        left: 0;
+    }
+
+    .c1>.logo {
+        left: 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        padding: 0 1rem;
+    }
+
+    .wavestyle {
+        flex-direction: column;
+        width: 75%;
+        gap: 1rem;
+        padding: 1rem 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .shape,
+    .direction,
+    .wavecolor,
+    .waveopacity,
+    .opt1,
+    .opt2,
+    .opt3,
+    .opt4 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .download {
+        margin-top: 2rem;
+        position: relative;
+        top: 2rem
+    }
+
+    .middle {
+        height: 11vh;
+
+    }
+
+    .bottom {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .news,
+    .notify,
+    .subscribe,
+    .contact,
+    .chat,
+    .products,
+    .blobmaker,
+    .figma {
+        position: static;
+        grid-row: auto;
+        grid-column: auto;
+        width: 100%;
+        text-align: left;
+    }
+
+    .subscribe,
+    .chat {
+        margin-bottom: 1rem;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subscribe .email {
+        width: 88%;
+    }
+
+    .subscribe .sub {
+        width: 100%;
+    }
+
+    .figma span {
+        font-size: 1.25rem;
+    }
+
+    .copyright {
+        margin: 0 auto;
+        text-align: center;
+        top: 1rem;
+    }
+
+    .something {
+        top: 34rem;
+        left: 90%
+    }
+
+    .line {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .copyright {
+        margin-left: 5.5rem;
+        text-align: center;
+        font-size: 0.85rem;
+        top: 1rem;
+    }
+
+    .award {
+        margin-left: 2.5rem;
+        margin-top: 1.5rem;
+
+    }
+}
