@@ -573,5 +573,89 @@ ul .first {
     margin-right: 1rem;
 }
 
+*{
+    transition:color .25s ease,background-color .25s ease,transform .25s ease,box-shadow .25s ease,border-color .25s ease,opacity .25s ease;
+}
+.nav>.logo:hover{
+    transform:scale(1.08);
+    cursor:pointer;
+}
+.navoptions>div:hover{
+    color:#FFD2D7;
+    cursor:pointer;
+}
+.pp:hover{
+    background-color:#fff;
+}
+.pp:hover svg{
+    fill:#000;
+}
+.start:hover{
+    background-color:#ffc1c9;
+    transform:translateY(-3px);
+    box-shadow:0 .75rem 1.5rem rgba(0,0,0,.4);
+    cursor:pointer;
+}
+.plans:hover{
+    background-color:#1e1e1e;
+    transform:translateY(-3px);
+    box-shadow:0 .75rem 1.5rem rgba(0,0,0,.4);
+    cursor:pointer;
+}
+
+.ads:hover,
+.offline:hover,
+.order:hover,
+.quality:hover,
+.friends:hover,
+.queue:hover,
+.insights:hover{
+    background-color:rgba(255,255,255,.05);
+}
+.paymethods>div:hover{
+    transform:scale(1.12);
+    box-shadow:0 .75rem 1.25rem rgba(0,0,0,.4);
+}
+.morepay:hover{
+    color:#FFD2D7;
+    cursor:pointer;
+}
+.individual:hover,
+.family:hover,
+.duo:hover,
+.student:hover{
+    transform:translateY(-8px);
+    box-shadow:0 1.5rem 3rem rgba(0,0,0,.6);
+}
+.premiumplans .try:hover{
+    background-color:#7fffd4;
+    transform:translateY(-3px);
+    cursor:pointer;
+    box-shadow:0 .75rem 1.5rem rgba(0,0,0,.5);
+}
+.premiumplans .onetimepay:hover{
+    background-color:#1e1e1e;
+    transform:translateY(-3px);
+    cursor:pointer;
+}
+.q:hover{
+    background-color:rgba(255,255,255,.05);
+    cursor:pointer;
+}
+.links ul li:hover{
+    color:white;
+    cursor:pointer;
+}
+.icons div:hover{
+    background-color:#1db954;
+    transform:scale(1.15);
+    cursor:pointer;
+}
+.final span:hover{
+    color:white;
+    cursor:pointer;
+}
+
+
 
 

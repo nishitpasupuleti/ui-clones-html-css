@@ -580,3 +580,74 @@
          margin-left: 5%;
      }
  }
+
+ *{
+    transition:color .25s ease,background-color .25s ease,transform .25s ease,box-shadow .25s ease,border-color .25s ease,opacity .25s ease;
+}
+.logo:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+}
+.language:hover{
+    border-color:rgba(255,255,255,0.7);
+    background:rgba(255,255,255,0.1);
+    cursor:pointer;
+}
+.signin:hover{
+    background:rgb(193,17,25);
+    cursor:pointer;
+}
+.email>input:focus{
+    outline:none;
+    border-color:rgb(229,9,20);
+    box-shadow:0 0 0 .15rem rgba(229,9,20,0.4);
+}
+.email>span:hover{
+    background:rgb(193,17,25);
+    cursor:pointer;
+    transform:translateY(-2px);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.5);
+}
+.movie:hover{
+    transform:scale(1.08);
+    z-index:5;
+}
+.movie:hover .poster{
+    box-shadow:0 1.25rem 2.5rem rgba(0,0,0,.7);
+}
+.movie:hover .rank{
+    opacity:.2;
+}
+.reason:hover{
+    transform:translateY(-8px);
+    box-shadow:0 1.5rem 3rem rgba(0,0,0,.6);
+    background:linear-gradient(to bottom,#23265a,#3a1f2a);
+}
+.q:hover{
+    background-color:rgba(128,128,128,0.6);
+    cursor:pointer;
+}
+.endemail>input:focus{
+    outline:none;
+    border-color:rgb(229,9,20);
+    box-shadow:0 0 0 .15rem rgba(229,9,20,0.4);
+}
+.endemail>span:hover{
+    background:rgb(193,17,25);
+    cursor:pointer;
+    transform:translateY(-2px);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.5);
+}
+ul>li:hover a{
+    color:white;
+    text-decoration:underline;
+}
+.bottom>h3:hover{
+    color:rgba(255,255,255,0.9);
+}
+.contact:hover{
+    color:white;
+}
+.netflix:hover{
+    color:white;
+}

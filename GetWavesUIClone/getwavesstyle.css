@@ -549,3 +549,60 @@ input::placeholder {
 
     }
 }
+
+*{
+    transition:color .25s ease,background-color .25s ease,transform .25s ease,box-shadow .25s ease,border-color .25s ease,opacity .25s ease;
+}
+.haikei a:hover{
+    text-decoration:underline;
+    opacity:.9;
+}
+.maker a:hover{
+    color:#0099ff;
+}
+.share span:hover{
+    color:#0099ff;
+    cursor:pointer;
+}
+.wavestyle:hover{
+    transform:translateY(-4px);
+    box-shadow:0 1rem 2.5rem rgba(0,0,0,.12);
+}
+.shape:hover,
+.direction:hover,
+.wavecolor:hover,
+.waveopacity:hover{
+    background-color:#e9eef1;
+}
+.opt4:hover{
+    transform:scale(1.08);
+    cursor:pointer;
+}
+.download:hover{
+    transform:translateY(-4px);
+    box-shadow:0 1rem 2rem rgba(39,48,54,.3);
+    cursor:pointer;
+}
+.color:hover{
+    transform:scale(1.2);
+}
+.grid a:hover{
+    color:#0099ff;
+}
+.subscribe>.email:focus{
+    outline:none;
+    box-shadow:0 0 0 .15rem rgba(0,153,255,.35);
+}
+.subscribe>.sub:hover{
+    background-color:#007acc;
+    cursor:pointer;
+    transform:translateY(-2px);
+    box-shadow:0 .75rem 1.5rem rgba(0,0,0,.25);
+}
+.copyright a:hover{
+    color:#0099ff;
+}
+.logo:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+}

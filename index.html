@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Clones | Nishit</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --border: #1f2933;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --hover: #0ea5e9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--card), #020617);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+      box-shadow: 0 12px 40px rgba(56, 189, 248, 0.15);
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #020617;
+      background: var(--accent);
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .btn:hover {
+      background: var(--hover);
+      transform: translateY(-1px);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 70px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer span {
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>UI Clone Projects</h1>
+      <p>
+        A collection of frontend UI clones built using HTML and CSS to practice
+        layout design, responsiveness, and modern UI structure.
+      </p>
+    </header>
+
+    <section class="grid">
+      <!-- Netflix -->
+      <div class="card">
+        <h2>Netflix UI Clone</h2>
+        <p>
+          A responsive landing page clone inspired by Netflix, focusing on
+          layout, typography, and visual hierarchy.
+        </p>
+
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Responsive</span>
+        </div>
+
+        <div class="actions">
+          <a href="https://nishitpasupuleti.github.io/ui-clones-html-css/NetflixUIClone/" class="btn">View Live</a>
+        </div>
+      </div>
+
+      <!-- Spotify Premium -->
+      <div class="card">
+        <h2>Spotify Premium UI</h2>
+        <p>
+          UI clone of Spotify Premium page showcasing clean sections, cards, and
+          modern spacing with a dark theme.
+        </p>
+
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">UI Clone</span>
+        </div>
+
+        <div class="actions">
+          <a href="https://nishitpasupuleti.github.io/ui-clones-html-css/SpotifyPremiumUIClone/" class="btn">View Live</a>
+        </div>
+      </div>
+
+      <!-- GetWaves -->
+      <div class="card">
+        <h2>GetWaves UI</h2>
+        <p>
+          A minimal UI clone focused on structure, alignment, and consistent
+          component styling.
+        </p>
+
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Layout</span>
+        </div>
+
+        <div class="actions">
+          <a href="https://nishitpasupuleti.github.io/ui-clones-html-css/GetWavesUIClone/" class="btn">View Live</a>
+        </div>
+      </div>
+    </section>
+
+    
+  </div>
+</body>
+</html>
